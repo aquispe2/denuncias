@@ -11,7 +11,7 @@ import com.bolsadeideas.springboot.backend.apirest.models.services.ICasosService
 
 import javax.validation.Valid;
 
-@CrossOrigin(origins = "http://localhost:1550")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/casos")
 public class CasosRestController {
@@ -25,9 +25,9 @@ public class CasosRestController {
 	}
 
 	@PostMapping("/add")
-	public String create( @RequestBody Casos casos) {
+	public ResponseEntity<Casos> create(@RequestBody Casos casos) {
 
-		//return ResponseEntity.ok(casosService.add(casos));
-		return "olaaaaaaaaaaaaaa";
+		return ResponseEntity.ok(casosService.add(casos));
+
 	}
 }
