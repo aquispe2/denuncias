@@ -21,7 +21,15 @@ public class Casos implements Serializable {
 	private Long caso_id;
 	private String descripcion;
 	private Long usuario_id;
+	private Long estado_id;
 
+	public Long getEstado_id() {
+		return estado_id;
+	}
+
+	public void setEstado_id(Long estado_id) {
+		this.estado_id = estado_id;
+	}
 
 	public Long getCaso_id() {
 		return caso_id;
