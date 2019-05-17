@@ -12,6 +12,6 @@ public interface IUsuarioPcService {
 
     public UsuariosPc insertOrUpdate(UsuariosPc usuariosPc);
 
-    public void delete(UsuariosPc usuariosPc);
+    public List<UsuariosPc>  verificarUsuario(String pCi);
 
 }

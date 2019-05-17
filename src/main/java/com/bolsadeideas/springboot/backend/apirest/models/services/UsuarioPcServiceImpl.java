@@ -27,10 +27,12 @@ public class UsuarioPcServiceImpl implements IUsuarioPcService{
         usuarioPcDao.save(usuariosPc);
         return usuariosPc;
     }
+
     @Override
-    public void delete(UsuariosPc usuariosPc) {
-        usuarioPcDao.delete(usuariosPc);
+    public List<UsuariosPc> verificarUsuario(String pCi) {
+       return  usuarioPcDao.verificarUsuario(pCi);
     }
+
     @Override
     public UsuariosPc findBy(Long id) {
         return usuarioPcDao.findById(id).get();
