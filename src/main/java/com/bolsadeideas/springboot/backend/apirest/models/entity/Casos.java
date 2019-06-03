@@ -22,6 +22,15 @@ public class Casos implements Serializable {
 	private String descripcion;
 	private Long usuario_id;
 	private Long estado_id;
+	private String fotoUrl;
+
+	public String getFotoUrl() {
+		return fotoUrl;
+	}
+
+	public void setFotoUrl(String fotoUrl) {
+		this.fotoUrl = fotoUrl;
+	}
 
 	public Long getEstado_id() {
 		return estado_id;
