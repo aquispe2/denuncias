@@ -26,7 +26,7 @@ public class CasosRestController {
 
 	@PostMapping("/InsertOrUpdate")
 	public ResponseEntity<Casos> InsserOrUpdate(@RequestBody Casos casos) {
-
+		casos.setEstado_id(1000L);
 		return ResponseEntity.ok(casosService.InssertOrUpdate(casos));
 
 	}
