@@ -24,10 +24,11 @@ public class CasosRestController {
 		return casosService.findAll();
 	}
 
-	@PostMapping("/add")
-	public ResponseEntity<Casos> create(@RequestBody Casos casos) {
+	@PostMapping("/InsertOrUpdate")
+	public ResponseEntity<Casos> InsserOrUpdate(@RequestBody Casos casos) {
 
-		return ResponseEntity.ok(casosService.add(casos));
+		return ResponseEntity.ok(casosService.InssertOrUpdate(casos));
 
 	}
+	
 }

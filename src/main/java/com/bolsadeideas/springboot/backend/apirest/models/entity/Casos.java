@@ -20,12 +20,46 @@ public class Casos implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long caso_id;
 	private String descripcion;
-	private String Direccion;
+	private String direccion;
+	private String respuesta_caso;
 	private Long usuario_id;
 	private Long estado_id;
 	private String fotoUrl;
-	private String Latitud;
-	private String Longitud;
+	private String latitud;
+	private String longitud;
+
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getRespuesta_caso() {
+		return respuesta_caso;
+	}
+
+	public void setRespuesta_caso(String respuesta_caso) {
+		this.respuesta_caso = respuesta_caso;
+	}
+
+	public String getLatitud() {
+		return latitud;
+	}
+
+	public void setLatitud(String latitud) {
+		this.latitud = latitud;
+	}
+
+	public String getLongitud() {
+		return longitud;
+	}
+
+	public void setLongitud(String longitud) {
+		this.longitud = longitud;
+	}
 
 	public String getFotoUrl() {
 		return fotoUrl;

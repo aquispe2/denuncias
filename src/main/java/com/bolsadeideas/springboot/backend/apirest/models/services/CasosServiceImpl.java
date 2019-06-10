@@ -22,7 +22,7 @@ public class CasosServiceImpl implements ICasosService {
 	}
 
 	@Override
-	public Casos add(Casos casos){
+	public Casos InssertOrUpdate(Casos casos){
 		casosDao.save(casos);
 		return casos;
 	}
