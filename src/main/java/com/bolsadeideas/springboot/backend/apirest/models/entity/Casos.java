@@ -20,9 +20,12 @@ public class Casos implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long caso_id;
 	private String descripcion;
+	private String Direccion;
 	private Long usuario_id;
 	private Long estado_id;
 	private String fotoUrl;
+	private String Latitud;
+	private String Longitud;
 
 	public String getFotoUrl() {
 		return fotoUrl;
