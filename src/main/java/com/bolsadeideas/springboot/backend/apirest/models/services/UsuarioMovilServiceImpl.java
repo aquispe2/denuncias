@@ -25,4 +25,9 @@ public class UsuarioMovilServiceImpl  implements IUsuarioMovilService {
     public UsuarioMovil add(UsuarioMovil usuarioMovil) {
         return usuarioMovilDao.save(usuarioMovil);
     }
+
+    @Override
+    public List<UsuarioMovil>  verificarUsuarioMovil(String ci, String mail){
+        return usuarioMovilDao.verificarUsuarioMovil(ci,mail);
+    }
 }

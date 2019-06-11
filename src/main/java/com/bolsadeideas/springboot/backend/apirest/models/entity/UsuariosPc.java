@@ -10,11 +10,20 @@ public class UsuariosPc implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long usuario_id;
     private String ci;
+    private String mail;
     private String extencion;
     private String nombre;
     private String paterno;
     private String materno;
     private Long estado_id;
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
 
     public Long getUsuario_id() {
         return usuario_id;

@@ -52,15 +52,14 @@ public class UsuarioRestController {
     }
 
 
-
-
-    /*@GetMapping("/listarUsuarioMovilTodos")
+    @GetMapping("/listarUsuarioMovilTodos")
     public List<UsuarioMovil> ListarUsuarioMovil() {
         return usuarioMovilService.findAll();
     }
-    @PostMapping("/addUsuarioMovil")
+    @PostMapping("/InsertOrUpdateUsuarioMovil")
     public ResponseEntity<UsuarioMovil> createUsuarioMovil(@RequestBody UsuarioMovil usuarioMovil) {
+        usuarioMovil.setEstado_id(1000L);
         return ResponseEntity.ok(usuarioMovilService.add(usuarioMovil));
-    }*/
+    }
 
 }
